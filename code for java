@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class pr_1 {
+	public static int schetSum(int ar[], int a) {
+		
+		int cnt = 0;
+		
+		for (int i = 0; i < ar.length ; i++) {
+			for (int j = i+1; j < ar.length; j++) {
+				if (ar[i]+ar[j]==a ) {
+					cnt++;
+
+				}
+			}
+		}
+		return cnt;
+	}
+
+	public static void main(String[] args) {
+	int [] ar= {1 , 5 , 7 , -1  , 3};
+	int rez =schetSum(ar,6);
+	System.out.print(rez);
+	
+	
+		
+	}
+}
